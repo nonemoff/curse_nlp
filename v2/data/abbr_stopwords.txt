@@ -1,0 +1,67 @@
+# Стоп-слова для аббревиатур
+# Исключаем общие сокращения, технические метки, организации
+
+# Общие метки
+OF
+THE
+AND
+OR
+IN
+ON
+AT
+TO
+FOR
+WITH
+BY
+FROM
+
+# Технические
+URL
+URI
+DOI
+PDF
+JSON
+XML
+HTML
+HTTP
+HTTPS
+API
+SDK
+CLI
+GUI
+
+# Академические
+VS
+ET
+AL
+PROC
+IEEE
+ACM
+LNCS
+ICML
+NIPS
+CVPR
+
+# Единицы измерения
+KB
+MB
+GB
+TB
+MS
+SEC
+MIN
+HR
+
+# Римские цифры
+XVI
+XVII
+XVIII
+XIX
+XX
+XXI
+
+# Математические
+MW
+MS
+CF
+DF

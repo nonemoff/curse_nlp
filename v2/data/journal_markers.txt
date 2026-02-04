@@ -1,0 +1,15 @@
+# Маркеры журналов и конференций
+# Используются для фильтрации организаций
+
+вестник
+журнал
+бюллетень
+proceedings
+conference
+symposium
+workshop
+journal
+transactions
+letters
+review
+magazine

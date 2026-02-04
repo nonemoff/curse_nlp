@@ -1,0 +1,297 @@
+# Словарь терминов предметной области
+# Формат: один термин на строку (RU или EN)
+
+# === ОБЩИЕ ТЕХНИЧЕСКИЕ ТЕРМИНЫ ===
+механизм
+система
+данные
+текст
+анализ
+процесс
+технология
+метод
+алгоритм
+параметр
+компонент
+интерфейс
+протокол
+архитектура
+структура
+модель
+реализация
+оптимизация
+производительность
+масштабируемость
+безопасность
+надёжность
+эффективность
+
+# === РАСПРЕДЕЛЁННЫЕ СИСТЕМЫ И DLT ===
+distributed ledger
+распределённый реестр
+blockchain
+блокчейн
+consensus
+консенсус
+consensus algorithm
+алгоритм консенсуса
+byzantine fault tolerance
+византийская отказоустойчивость
+node
+узел
+validator
+валидатор
+block
+блок
+transaction
+транзакция
+network
+сеть
+peer-to-peer
+одноранговый
+decentralized
+децентрализованный
+distributed system
+распределённая система
+fault tolerance
+отказоустойчивость
+synchronization
+синхронизация
+
+# === АЛГОРИТМЫ КОНСЕНСУСА ===
+pbft
+practical byzantine fault tolerance
+tendermint
+proof of work
+proof of stake
+proof of authority
+pow
+pos
+poa
+bft
+raft
+paxos
+leader election
+выбор лидера
+voting
+голосование
+quorum
+кворум
+finality
+финализация
+commit
+фиксация
+prepare
+подготовка
+pre-commit
+пред-фиксация
+
+# === BLOCKCHAIN КОМПОНЕНТЫ ===
+ledger
+реестр
+smart contract
+смарт-контракт
+token
+токен
+wallet
+кошелёк
+miner
+майнер
+mining
+майнинг
+hash
+хеш
+merkle tree
+дерево Меркла
+nonce
+nonce
+difficulty
+сложность
+timestamp
+временная метка
+
+# === АТАКИ И БЕЗОПАСНОСТЬ ===
+attack
+атака
+sybil attack
+атака Сибилы
+51% attack
+атака 51%
+double spending
+двойная трата
+malicious node
+злонамеренный узел
+adversary
+противник
+threat model
+модель угроз
+vulnerability
+уязвимость
+cryptography
+криптография
+signature
+подпись
+verification
+верификация
+
+# === МЕТРИКИ ПРОИЗВОДИТЕЛЬНОСТИ ===
+throughput
+пропускная способность
+latency
+задержка
+scalability
+масштабируемость
+performance
+производительность
+overhead
+накладные расходы
+bottleneck
+узкое место
+response time
+время отклика
+bandwidth
+пропускная способность канала
+
+# === NLP И ЛИНГВИСТИКА ===
+
+## Основные понятия
+natural language processing
+обработка естественного языка
+computational linguistics
+компьютерная лингвистика
+text mining
+text analysis
+анализ текста
+corpus
+корпус
+token
+токен
+lemma
+лемма
+morphology
+морфология
+syntax
+синтаксис
+semantics
+семантика
+
+## Методы обработки
+tokenization
+токенизация
+lemmatization
+лемматизация
+stemming
+стемминг
+pos tagging
+морфологический анализ
+named entity recognition
+ner
+извлечение именованных сущностей
+parsing
+парсинг
+annotation
+аннотирование
+
+## Частотный анализ
+frequency analysis
+частотный анализ
+frequency dictionary
+частотный словарь
+word frequency
+частота слова
+zipf law
+закон Ципфа
+rank
+ранг
+distribution
+распределение
+statistics
+статистика
+
+## Терминология
+term extraction
+извлечение терминов
+terminology
+терминология
+keyword extraction
+извлечение ключевых слов
+tf-idf
+term frequency
+частота термина
+document frequency
+документная частота
+index
+указатель
+concordance
+конкорданс
+collocation
+коллокация
+n-gram
+биграмма
+триграмма
+bigram
+trigram
+
+# === ДОПОЛНИТЕЛЬНЫЕ BLOCKCHAIN ТЕРМИНЫ ===
+
+## Компоненты блокчейна
+genesis block
+блок генезиса
+chain
+цепь
+fork
+форк
+branch
+ветвь
+state
+состояние
+account
+аккаунт
+balance
+баланс
+gas
+газ
+fee
+комиссия
+
+## Процессы консенсуса
+round
+раунд
+phase
+фаза
+proposal
+предложение
+vote
+голос
+view
+представление
+epoch
+эпоха
+height
+высота
+confirmation
+подтверждение
+
+## Сетевые понятия
+broadcast
+рассылка
+gossip protocol
+протокол сплетен
+message
+сообщение
+communication
+коммуникация
+propagation
+распространение
+relay
+ретрансляция
+
+## Типы узлов
+full node
+полный узел
+light node
+лёгкий узел
+archive node
+архивный узел
+bootstrap node
+начальный узел

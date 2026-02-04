@@ -1,0 +1,25 @@
+# Программные продукты и технологии
+
+# Blockchain платформы
+Bitcoin
+Ethereum
+Hyperledger
+Fabric
+Tendermint
+Polkadot
+Cosmos
+Cardano
+
+# Алгоритмы консенсуса (как продукты)
+PoW
+PoS
+PoA
+DPoS
+PBFT
+CBFT
+Raft
+
+# Другие технологии
+IPFS
+Solidity
+Web3
