@@ -1,12 +1,12 @@
-"""PDF text extraction module"""
-import fitz  # PyMuPDF
+"""PDF text extraction module."""
+import fitz
 from pathlib import Path
-from langdetect import detect
+from langdetect import detect, LangDetectException
 from tqdm import tqdm
 
 
 class PDFParser:
-    """Extract text from PDF files"""
+    """Extract text from PDF files."""
     
     def __init__(self, corpus_dir: Path, output_dir: Path):
         self.corpus_dir = Path(corpus_dir)
@@ -14,26 +14,19 @@ class PDFParser:
         self.output_dir.mkdir(parents=True, exist_ok=True)
     
     def extract_text(self, pdf_path: Path) -> dict:
-        """Extract text from single PDF file"""
+        """Extract text from single PDF file."""
         doc = fitz.open(pdf_path)
-        text = ""
-        
-        for page in doc:
-            text += page.get_text()
-        
+        text = "".join(page.get_text() for page in doc)
         doc.close()
         
-        # Detect language
         try:
-            lang = detect(text[:1000])  # Use first 1000 chars
+            lang = detect(text[:1000])
             lang = 'RU' if lang == 'ru' else 'EN'
-        except:
+        except LangDetectException:
             lang = 'UNKNOWN'
         
-        # Save extracted text
         output_file = self.output_dir / f"{pdf_path.stem}.txt"
-        with open(output_file, 'w', encoding='utf-8') as f:
-            f.write(text)
+        output_file.write_text(text, encoding='utf-8')
         
         return {
             'filename': pdf_path.name,
@@ -44,7 +37,7 @@ class PDFParser:
         }
     
     def extract_all(self) -> list[dict]:
-        """Extract text from all PDFs in corpus directory"""
+        """Extract text from all PDFs in corpus directory."""
         pdf_files = list(self.corpus_dir.glob("*.pdf"))
         
         if not pdf_files:

@@ -1,20 +1,17 @@
-"""Configuration settings for NLP project"""
+"""Configuration settings for NLP project."""
 from pathlib import Path
 
-# Project paths
 ROOT_DIR = Path(__file__).parent
 CORPUS_DIR = ROOT_DIR.parent / "corpus"
 OUTPUT_DIR = ROOT_DIR / "output"
 CACHE_DIR = ROOT_DIR / "cache"
 DATA_DIR = ROOT_DIR / "data"
 
-# Ensure directories exist
 OUTPUT_DIR.mkdir(exist_ok=True)
 CACHE_DIR.mkdir(exist_ok=True)
 (OUTPUT_DIR / "extracted").mkdir(exist_ok=True)
 (OUTPUT_DIR / "graphs").mkdir(exist_ok=True)
 
-# Data files
 DATA_FILES = {
     'domain_terms': DATA_DIR / 'domain_terms.txt',
     'products': DATA_DIR / 'products.txt',
@@ -24,28 +21,24 @@ DATA_FILES = {
     'address_markers': DATA_DIR / 'address_markers.txt',
 }
 
-# Frequency analysis settings
 MIN_WORD_LENGTH = 3
 TOP_WORDS_LIMIT = 1000
 CORE_LEXICON_THRESHOLD = 0.5
 
-# Term extraction settings
 MIN_TERM_FREQUENCY = 3
 MAX_NGRAM_LENGTH = 3
 MIN_TERMS_REQUIRED = 100
 DOMAIN_BOOST = 2.0
 
-# NER settings
 MIN_ENTITY_FREQUENCY = 2
-MIN_PERSON_FREQUENCY = 1  # Lower threshold for persons
+MIN_PERSON_FREQUENCY = 1
 
-# Graph settings
 GRAPH_DPI = 300
 GRAPH_FIGSIZE = (12, 8)
 
 
-def load_text_file(filepath: Path, skip_comments=True) -> list[str]:
-    """Load lines from text file, optionally skipping comments"""
+def load_text_file(filepath: Path, skip_comments: bool = True) -> list[str]:
+    """Load lines from text file, optionally skipping comments."""
     if not filepath.exists():
         return []
     
@@ -60,7 +53,7 @@ def load_text_file(filepath: Path, skip_comments=True) -> list[str]:
 
 
 def load_abbr_map(filepath: Path) -> dict[str, str]:
-    """Load abbreviation mapping from key=value file"""
+    """Load abbreviation mapping from key=value file."""
     if not filepath.exists():
         return {}
     

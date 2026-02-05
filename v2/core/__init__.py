@@ -1,1 +1,2 @@
-# v2 - Core modules
+"""Core modules for NLP text analysis."""
+
